@@ -1,0 +1,7 @@
+{
+  "name": "ContabGest - Gestão Contábil e Financeira",
+  "description": "Plataforma SaaS em Versão 2.0.0 (Produção) para escritórios de contabilidade gerenciarem empresas, demonstrações contábeis (Balancete Mensal de Verificação para auditoria externa, DRE, DFC, Balanço Patrimonial), Simples Nacional (PGDAS-D), MEI, notas fiscais, cobranças e RH com isolamento multi-tenant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
