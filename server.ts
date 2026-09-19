@@ -2,20 +2,20 @@ import express from 'express';
 import path from 'path';
 import crypto from 'crypto';
 import { createServer as createViteServer } from 'vite';
-import { db } from './server/db.js';
-import { apurarSimplesNacionalPeriodo } from './src/utils/simplesNacionalCalculator.js';
+import { db } from './server/db.ts';
+import { apurarSimplesNacionalPeriodo } from './src/utils/simplesNacionalCalculator.ts';
 import {
   calcularResumoFaturamentoMei,
   gerarGradeGuiasAnoMei,
   calcularDasnSimei,
-} from './src/utils/meiCalculator.js';
+} from './src/utils/meiCalculator.ts';
 import {
   SERVICOS_CONTABEIS_PADRAO,
   CONTRATOS_HONORARIOS_PADRAO,
   MENSALIDADES_HONORARIOS_PADRAO,
   RECIBOS_HONORARIOS_PADRAO,
   valorPorExtenso,
-} from './src/data/demoCobrancas.js';
+} from './src/data/demoCobrancas.ts';
 import {
   BENS_PATRIMONIAIS_DEMO,
   CENTROS_CUSTO_DEMO,
@@ -26,7 +26,7 @@ import {
   gerarDre,
   gerarDfc,
   calcularIndicadoresContabeis,
-} from './src/data/demoPatrimonioContabil.js';
+} from './src/data/demoPatrimonioContabil.ts';
 
 // In-Memory Cobranças Store
 let servicosContabeisDb = [...SERVICOS_CONTABEIS_PADRAO];
